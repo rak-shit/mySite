@@ -12,12 +12,13 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <style type="text/css">
     body,div,nav,button,a{
       display: block;
     }
     body{
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Montserrat', sans-serif;
     }
     #Title{
       font-size: 180%;
@@ -58,10 +59,10 @@
     }
     #section3{
       height: 500px;
+      background-color: rgb(249,248,248);
     }
     #section4{
       height: 200px;
-      background-color: rgb(249,248,248);
     }
     .num{
       font-size: 150%;
@@ -111,6 +112,23 @@
     .img-box:hover .middle {
       opacity: 1;
     }
+    #section5{
+      height: 500px;
+    }
+    .skills{
+      padding: 30px;
+    }
+    .set{
+      position: relative;
+      top: 100px;
+     }
+     .lang{
+      color: blue;
+     }
+     .sets{
+      position: relative;
+      bottom: 50px;
+     }
   </style>
 </head>
 <body data-spy="scroll" data-target=".navbar">
@@ -128,6 +146,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#section1">About Me</a></li>
         <li><a href="#section2">Education</a></li>
+        <li><a href="#section5">Skills</a></li>
         <li><a href="#section3">My Works</a></li>
         <li><a href="#section4">Connect With Me</a></li>
       </ul>
@@ -173,6 +192,59 @@
       </div>
     </div>
   </div>
+<div id="section5" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+    </div>
+    <div class="col-sm-4 skills">
+      <h1><u>Skills</u></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 set">
+      <div id="1">
+        <h3>
+          <a href="#prolang" class="lang" id="pro">Programming Languages</a>
+        </h3>
+      </div>
+      <div id="prolang" style="display: none" class="sets">
+        <span><p>01. C</p></span>
+        <br>
+        <span><p>02. C++</p></span>
+        <br>
+        <span><p>03. Java</p></span>
+        <br>
+        <span><p>04. Python</p></span>
+      </div>
+    </div>
+    <div class="col-sm-4 set">
+      <div id="2">  
+        <h3>
+          <a href="#frolang" class="lang" id="fro">Frontend Languages</a>
+        </h3>
+      </div>
+      <div id="frolang" style="display: none" class="sets">
+        <span><p>01. HTML</p></span>
+        <br>
+        <span><p>02. CSS3</p></span>
+        <br>
+        <span><p>03. JavaScript</p></span>
+        <br>
+        <span><p>04. jQuery</p></span>
+      </div>
+    </div>
+    <div class="col-sm-4 set">
+      <div id="3">
+        <h3>
+          <a href="#balang" class="lang" id="ba">Backend Languages</a>
+        </h3>
+      </div>
+      <div id="balang" style="display: none" class="sets">
+        <span><p>01. Django</p></span>
+      </div>
+    </div>
+  </div>
+</div> 
 <div id="section3" class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
@@ -241,9 +313,29 @@
       </div>
     </div>
   </div>
-</div>  
+</div> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(function(){
+    $('#frolang').hide();
+    $('#prolang').hide();
+    $('#balang').hide();
+    $('#pro').on('click', function(){
+      $('#1').fadeOut("slow");
+      $('#prolang').fadeIn("slow");
+    });
+    $('#fro').on('click', function(){
+      $('#2').fadeOut("slow");
+      $('#frolang').fadeIn("slow");
+    });
+    $('#ba').on('click', function(){
+      $('#3').fadeOut("slow");
+      $('#balang').fadeIn("slow");
+    });
+  });
 </script>
 </body>
 </html>
