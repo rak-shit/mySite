@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rakshit</title>
+  <title>Rakshit</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     
@@ -204,43 +204,93 @@
     <div class="col-sm-4 set">
       <div id="1">
         <h3>
-          <a href="#prolang" class="lang" id="pro">Programming Languages</a>
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal">Programming Languagess</button>
         </h3>
       </div>
-      <div id="prolang" style="display: none" class="sets">
-        <span><p>01. C</p></span>
-        <br>
-        <span><p>02. C++</p></span>
-        <br>
-        <span><p>03. Java</p></span>
-        <br>
-        <span><p>04. Python</p></span>
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4>Programming Languages</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="c.png" height="100px" width="100px;">
+                </div>
+                <div class="col-xs-3">
+                  <img src="cpp.png" height="100px" width="100px;">
+                </div>
+                <div class="col-xs-3">
+                  <img src="java.png" height="100px" width="100px;">
+                </div>
+                <div class="col-xs-3">
+                  <img src="python.jpg" height="100px" width="100px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
     <div class="col-sm-4 set">
       <div id="2">  
         <h3>
-          <a href="#frolang" class="lang" id="fro">Frontend Languages</a>
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal1">Frontend Languagess</button>
         </h3>
       </div>
-      <div id="frolang" style="display: none" class="sets">
-        <span><p>01. HTML</p></span>
-        <br>
-        <span><p>02. CSS3</p></span>
-        <br>
-        <span><p>03. JavaScript</p></span>
-        <br>
-        <span><p>04. jQuery</p></span>
+      <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4>Frontend Languages</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img src="html.png" height="100px" width="100px;">
+                </div>
+                <div class="col-xs-3">
+                  <img src="css.png" height="100px" width="100px;">
+                </div>
+                <div class="col-xs-3">
+                  <img src="js.png" height="100px" width="100px;">
+                </div>
+                <div class="col-xs-3">
+                  <img src="jquery.png" height="100px" width="100px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
     <div class="col-sm-4 set">
       <div id="3">
         <h3>
-          <a href="#balang" class="lang" id="ba">Backend Languages</a>
+          <button type="button" class="btn" data-toggle="modal" data-target="#myModal2">Backend Languagess</button>
         </h3>
       </div>
-      <div id="balang" style="display: none" class="sets">
-        <span><p>01. Django</p></span>
+      <div class="modal fade" id="myModal2" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4>Backend Languages</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-xs-4">
+                </div>
+                <div class="col-xs-4">
+                  <img src="dj.png" height="100px" width="100px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
       </div>
     </div>
   </div>
@@ -286,7 +336,7 @@
           <img src="tdl.png" alt="Lights" width="100%" class="image">
           <div class="middle">
             <div class="text">
-              ToDoList! Don't foeget anything
+              ToDoList! Don't forget anything
             </div>
           </div>
         </a>
@@ -295,13 +345,13 @@
   </div>
 </div>
 <div id="section4" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4">
-      <div class="Connect">
-        <h1><u>Connect With Me</u></h1>
+    <div class="row">
+      <div class="col-sm-4">
       </div>
+      <div class="col-sm-4">
+       <div class="Connect">
+          <h1><u>Connect With Me</u></h1>
+        </div>
       <div class="icon-bar">
         <a href="https://www.facebook.com/rakshit.sai.5" class="icon"><span class="fa fa-facebook social"></span></a>
         <a href="https://www.instagram.com/rakshitsai/" class="icon"><span class="fa fa-instagram social"></span></a>
@@ -316,26 +366,6 @@
 </div> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-  $(function(){
-    $('#frolang').hide();
-    $('#prolang').hide();
-    $('#balang').hide();
-    $('#pro').on('click', function(){
-      $('#1').fadeOut("slow");
-      $('#prolang').fadeIn("slow");
-    });
-    $('#fro').on('click', function(){
-      $('#2').fadeOut("slow");
-      $('#frolang').fadeIn("slow");
-    });
-    $('#ba').on('click', function(){
-      $('#3').fadeOut("slow");
-      $('#balang').fadeIn("slow");
-    });
-  });
 </script>
 </body>
 </html>
